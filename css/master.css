@@ -1,0 +1,238 @@
+/* IMPORTS----------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* VARIABLES--------------------------------- */
+:root{
+  /* Colores */
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+  --greey-color:#313337;
+  /* Tipografia */
+  --normal:12px;
+  /* Espaciado */
+  --space:10px;
+  /* Box shadow */
+  --box:0px 0px 2px 1px #e6e5e9;
+}
+
+/* Navbar--------------------------------------- */
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+
+label, p{
+  font-size: var(--normal);
+}
+
+
+/* MAIN section --------------------------------- */
+.main_section{
+  padding: 200px;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.product{
+  padding: var(--space);
+  margin-top: -230px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+  }
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
+
+}
+
+
+
+/* Incentive ---------- */
+
+.incentives{
+  padding: 160px 15%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.incentive{
+  margin:auto;
+  padding: 30px;
+}
+
+.incentive .content{
+  width: 250px;
+}
+
+/* Mentions----------------------------------------- */
+.border_separation{
+  border-bottom: 1px solid #EEEEEE;
+  margin: var(--space) 15%;
+}
+
+.mentions_title{
+  text-align: center;
+}
+
+.mentions_title h1{
+  margin: 0;
+}
+
+.mentions{
+  display: flex;
+  padding: 0 15% 50px;
+}
+
+.mention{
+  padding: 35px;
+}
+
+.mention .content{
+  box-shadow: 0px 0px 5px 4px #e6e5e9;
+  border-radius: 10px;
+}
+
+.text_mention{
+  padding: var(--space);
+}
+
+.text_mention h3{
+  margin: 0 0 var(--space) 0;
+}
+
+.img_mention{
+  text-align: center;
+}
+
+.img_mention img{
+  width: -webkit-fill-available;
+}
+
+/* footer-------------------------------------------------- */
+
+footer .content{
+  margin-top: var(--space);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--greey-color);
+  padding: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* product section -------------------------------------------------- */
+
+.producto_title{
+  padding-left: 16%;
+  margin: 100px 0;
+}
+
+.img_grid_product img{
+  height: 230px;
+}
+
+.producto_text{
+  margin: 80px 50px;
+}
+
+
+/* Modulo venta --------------------------------------------------------- */
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_img{
+  max-width: 150px;
+  margin: auto;
+}
+
+.data{
+  margin-bottom: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.container{
+  margin-top: 200px;
+}
+
+.footerVenta footer{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* FIN */
